@@ -4,7 +4,9 @@ public class Order {
     private int customerId;
     private double totalPrice;
 
-    public Order(){
+    Order(int customerId, double totalPrice) {
+        this.customerId = customerId;
+        this.totalPrice = totalPrice;
     }
 
 }
