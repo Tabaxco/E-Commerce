@@ -20,13 +20,11 @@ public class ConnectionFactory {
                 System.out.println("Connecting to DOCKER database...");
             }
 
-            // 3. Create the connection
             return DriverManager.getConnection(dbUrl, USER, PASS);
 
         } catch (SQLException e) {
             System.err.println("CRITICAL: Could not connect to the database!");
             e.printStackTrace();
-            // In a real app, you might want to throw a RuntimeException here
             throw new RuntimeException("Database connection failed", e);
         }
     }

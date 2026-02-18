@@ -7,7 +7,7 @@ This project demonstrates a raw implementation of an MVC architecture without re
 * **Language:** Java (JDK 21 or later recommended)
 * **Build Tool:** Maven
 * **Database:** PostgreSQL 16
-* *Infrastructure:* Docker & Docker Compose
+* **Infrastructure:** Docker & Docker Compose
 
 ### 📦 How to run:
 ---
