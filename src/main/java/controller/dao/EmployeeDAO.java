@@ -1,7 +1,29 @@
 package controller.dao;
 
 import model.Employee;
-import controller.service.ConnectionFactory;
 
-public class EmployeeDAO {
+import java.sql.SQLException;
+
+public class EmployeeDAO extends BaseDAO<Employee> {
+
+    @Override
+    public void insert(Employee employee) {
+
+    }
+
+    @Override
+    public Employee findById(int id) {
+
+    }
+
+    @Override
+    public void update(Employee employee) {
+
+    }
+
+    @Override
+    public void delete(int id) {
+
+    }
+
 }
