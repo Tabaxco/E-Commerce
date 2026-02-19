@@ -1,6 +1,5 @@
 
-import model.*;
-import controller.service.ConnectionFactory;
+import controller.dao.ConnectionFactory;
 
 public class Main {
     public static void main(String [] args) {

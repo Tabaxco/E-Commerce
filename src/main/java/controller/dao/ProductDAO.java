@@ -1,7 +1,7 @@
 package controller.dao;
 
+import jdk.jshell.spi.ExecutionControl;
 import model.Product;
-import controller.service.ConnectionFactory;
 
 public class ProductDAO extends BaseDAO<Product> {
 
@@ -12,7 +12,7 @@ public class ProductDAO extends BaseDAO<Product> {
 
     @Override
     public Product findById(int id) {
-
+        return null;
     }
 
     @Override

@@ -1,4 +1,4 @@
-package controller.service;
+package controller.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

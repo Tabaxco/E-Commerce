@@ -1,6 +1,4 @@
-package controller.dao;
-
-import java.sql.SQLException;
+package controller.dao.interfaces;
 
 public interface GenericDAO<T> {
     void insert(T entity);
