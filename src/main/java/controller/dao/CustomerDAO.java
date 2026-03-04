@@ -9,7 +9,7 @@ public class CustomerDAO implements GenericDAO<Customer> {
 
     @Override
     public void insert(Customer customer) {
-        String insertCustomerSQL = "INSERT INTO users (Id, Name, Registration_Date) VALUES (?, ?)";
+        String insertCustomerSQL = "INSERT INTO users (Name, Registration_Date) VALUES (?, ?)";
         String insertTelephoneSQL = "INSERT INTO customer_telephones (Id, Telephone_Number) VALUES (?,?)";
         String insertEmailSQL = "INSERT INTO customer_emails (Id, Email) VALUES (?,?)";
 
@@ -17,9 +17,17 @@ public class CustomerDAO implements GenericDAO<Customer> {
             conn.setAutoCommit(false);
 
             try(PreparedStatement stmtCustomer = conn.prepareStatement(insertCustomerSQL, Statement.RETURN_GENERATED_KEYS)) {
-                stmtCustomer.setInt(1, customer.getId());
-                stmtCustomer.setString(2, customer.getName());
+                stmtCustomer.setString(1, customer.getName());
+
+                stmtCustomer.executeUpdate();
+
+                int generatedUserId = -1;
+                try(ResultSet rs = stmtCustomer.getGeneratedKeys()) {
+
+                }
             }
+
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
