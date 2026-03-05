@@ -1,4 +1,4 @@
-package controller.dao.interfaces;
+package repository;
 
 public interface GenericDAO<T> {
     void insert(T entity);

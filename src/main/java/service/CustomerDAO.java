@@ -1,6 +1,7 @@
-package controller.dao;
+package service;
 
-import controller.dao.interfaces.GenericDAO;
+import controller.dao.ConnectionFactory;
+import repository.GenericDAO;
 import model.Customer;
 import java.sql.*;
 
