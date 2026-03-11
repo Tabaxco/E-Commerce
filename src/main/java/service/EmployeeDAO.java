@@ -25,7 +25,7 @@ public class EmployeeDAO implements GenericDAO<Employee> {
 
                 stmtEmployee.executeUpdate();
 
-                int generatedUserId = 1;
+                int generatedUserId = -1;
                 try (ResultSet rs = stmtEmployee.getGeneratedKeys()) {
                     if (rs.next()) {
                         generatedUserId = rs.getInt(1);

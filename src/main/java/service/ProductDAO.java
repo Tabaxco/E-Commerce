@@ -22,6 +22,9 @@ public class ProductDAO implements GenericDAO<Product> {
                 stmtProduct.setDouble(4, product.getProductHeight());
                 stmtProduct.setDouble(5, product.getProductWeight());
                 stmtProduct.executeUpdate();
+
+                int generatedUserId = -1;
+
             }
 
         } catch (SQLException e) {
